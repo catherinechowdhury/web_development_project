@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Mitr:200,300,regular,500,600,700);
+
+/*Body of entire webpage*/
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Mitr, 'Arial';
+    margin:  2% 10%;
+    padding: 2%;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.register{
+    display: block;
+    background-color: rgba(200, 49, 49, 0.264);
+    box-shadow: 3px 3px 3px black;
+    text-align: center;
+}
+.register input{
+    display: block;
+    margin: auto;
+}
+
+/*Content*/
+main p{
+    border-bottom: 3px solid rgb(235, 43, 43);
+    width: auto;
+    height: 100px;
+    padding: 2% 3%;
+    
+}
+#login{
+    text-align: right;
+}
+#title{
+    font-size: 110%;
+    text-align: left;
+}
+nav a{
+    padding: 0 2%;
+    margin: 0 2%;
+    justify-content: center;
+    text-decoration: none;
+    color:black;  
+    border-bottom: 3px solid rgb(235, 43, 43);
+}
+.introduction{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center;
+    margin:5%;
+    
+}
+.introduction p{
+    width: 50%;
+    height:50%;
+    
+    padding: 3%;
+}
+.introduction img{
+    width: 30%;
+    height: 100%;
+    box-shadow: 5px 5px 2px rgb(235, 43, 43);
+   
+}
