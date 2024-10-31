@@ -2,5 +2,5 @@
 ## Web Development Project
 ---
 
-![Image](./images/mainintro.jpg)
+![Image](./images/Flowchart.jpeg)
 
