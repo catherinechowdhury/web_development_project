@@ -7,3 +7,12 @@ Users will be able to learn Chinese by practicing basic conversation prompts wit
 
 ![Image](./images/Flowchart.jpeg)
 
+---
+
+Below are samples of the database tables. 
+
+![Image](./images/databases.jpg)
+![Image](./images/postDemo.jpg)
+![Image](./images/promptDemo.jpg)
+![Image](./images/userDemo.jpg)
+
