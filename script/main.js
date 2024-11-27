@@ -1,39 +1,32 @@
 //Login
 
 let login= document.getElementById("login")
-login.addEventListener('submit',logIn)
+if(login) login.addEventListener('submit',logForm)
 
-function logIn(e){
+function logForm(e){
     e.preventDefault()
     const user = {
         username: document.getElementById("username").value,
-        password: document.getElementById("password").value,
+        password: document.getElementById("password").value
     }
+    console.log(user)
 }
 
 //Register 
 let register= document.getElementById("register")
-register.addEventListener('submit',reg)
+if(register) register.addEventListener('submit',registerForm)
 
-function reg(e){
+function registerForm(e){
     e.preventDefault()
     const user = {
+        email: document.getElementById("email").value,
         username: document.getElementById("username").value,
         password: document.getElementById("password").value,
-        email: document.getElementById("email").value,
         confirmation: document.getElementById("confirmation").value
     }
+    console.log(user)
 }
 
-//Post
-let post= document.getElementById("post")
-register.addEventListener('submit',posting)
 
-function posting(e){
-    e.preventDefault()
-    const post={
-        question: document.getElementById("question").value
-    }
-}
 
 

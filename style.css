@@ -19,9 +19,16 @@ nav{
     
 }
 
-.regbox{
+/*Registration Page*/
+.registerpage p{
+    display:block;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+#register{
     display: block;
-    width: auto;
+    width: 50%;
     margin:auto;
     background-color: rgba(200, 49, 49, 0.264);
     box-shadow: 2px 2px 2px black;
