@@ -14,7 +14,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "website_project": "file:"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
