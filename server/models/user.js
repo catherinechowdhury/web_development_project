@@ -23,12 +23,12 @@ async function getAllUsers() {
 
 module.exports= { getAllUsers } 
 
-// async function userExists(username) {
-//   let sql = `SELECT * FROM User 
-//     WHERE Username = "${username}"
-//   `
-//   return await con.query(sql) 
-// }
+async function userExists(username) {
+  let sql = `SELECT * FROM User 
+    WHERE Username = "${username}"
+  `
+  return await con.query(sql) 
+}
 
 // async function emailExists(email) {
 //   let sql = `SELECT * FROM User 
