@@ -11,8 +11,8 @@ Users will be able to learn Chinese by practicing basic conversation prompts wit
 
 Below are samples of the database tables. 
 
-![Image](./images/databases.jpg)
-![Image](./images/postDemo.jpg)
-![Image](./images/promptDemo.jpg)
-![Image](./images/userDemo.jpg)
+![Image](./public/images/databases.jpg)
+![Image](./public/images/postDemo.jpg)
+![Image](./public/images/promptDemo.jpg)
+![Image](./public/images/userDemo.jpg)
 
