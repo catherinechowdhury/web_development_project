@@ -23,8 +23,7 @@ app.get('/', (req, res) => res.sendFile(path.join(__dirname + "/public/login.htm
 app.use('/user',userRoutes)
 app.use('/post', postRoutes)
 
-//can change port number
-//localhost:3000 on web browser
-//It would not work until I changed ports
-const PORT = process.env.PORT || 5500
+
+const PORT = process.env.PORT || 3000
 app.listen(PORT, () => console.log(`Server started!! Listening on port ${PORT}!!! :)`))
+
