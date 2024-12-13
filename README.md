@@ -2,7 +2,7 @@
 ## Web Development Project
 ---
 
-Users will be able to learn Chinese by practicing basic conversation prompts with other users. Users will also be able to create a question and allow others to respond. 
+Users will be able to learn Chinese by practicing basic conversation with other users. Website under development.  
 
 
 ![Image](/public/images/Flowchart.jpeg)
