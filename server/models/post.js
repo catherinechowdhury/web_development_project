@@ -46,4 +46,4 @@ async function deletePost(post) {
     await con.query(sql)
   }
 
-module.exports = {createPost, updatePost, deletePost}
+module.exports = {createPost, allUserPosts,updatePost, deletePost}
