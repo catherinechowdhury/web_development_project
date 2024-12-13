@@ -19,6 +19,8 @@ if(register) register.addEventListener('submit',registerForm)
 function registerForm(e){
     e.preventDefault()
     const user = {
+        fName: document.getElementById("fName").value,
+        lName:document.getElementById("lName").value,
         email: document.getElementById("email").value,
         username: document.getElementById("username").value,
         password: document.getElementById("password").value,
