@@ -25,5 +25,6 @@ app.use('/post', postRoutes)
 
 //can change port number
 //localhost:3000 on web browser
+//It would not work until I changed ports
 const PORT = process.env.PORT || 5500
 app.listen(PORT, () => console.log(`Server started!! Listening on port ${PORT}!!! :)`))
