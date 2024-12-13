@@ -19,7 +19,8 @@ app.use(function(req, res, next) {
 app.use(express.static(__dirname + "/public"))
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + "/public/login.html")))
 
-app.use('/users', userRoutes)
+//app.use('/users', userRoutes)
+app.use('/user',userRoutes)
 app.use('/post', postRoutes)
 
 //can change port number

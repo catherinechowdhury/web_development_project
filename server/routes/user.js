@@ -32,5 +32,23 @@ try{
     res.status(401).send({message:err.message})
   }
 })
+.put('/update', async(req, res) => {
+  try {
+    let user = await User.updateEmail(req.body)
+    res.send({...user, Password: undefined})
+  } catch(err) {
+    res.status(401).send({message: err.message})
+  }
+})
+
+.delete('/delete', async(req, res) => {
+  try {
+    let user = await User.deleteAccount(req.body)
+    res.send({success: "Account has been deleted"})
+  } catch(err) {
+    res.status(401).send({message: err.message})
+  }
+})
+
 
 module.exports = router
