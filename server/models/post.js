@@ -24,7 +24,7 @@ async function createPost(user) {
 async function allUserPosts() {
     let sql = `
     SELECT * FROM Post
-    WHERE PostID=${post.PostID}
+    WHERE PostID= "${post.PostID}"
     `
     return await con.query(sql)
   }
@@ -34,14 +34,14 @@ async function updatePost(post) {
       UPDATE Post SET Content="${post.Content}"
       WHERE PostID="${user.PostID}"
     `
-    return await con.query(sql)
+    await con.query(sql)
   }
 
 //Delete -delete post
 async function deletePost(post) {
     let sql = `
       DELETE FROM Post
-      WHERE PostID = ${post.PostID}
+      WHERE PostID = "${post.PostID}"
     `
     await con.query(sql)
   }
