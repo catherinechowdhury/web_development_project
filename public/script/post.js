@@ -1,11 +1,11 @@
 //Prompt post
 async function fetchData(route = '', data = {}, methodType) {
     const response = await fetch(`http://localhost:3000${route}`, {
-      method: "POST", // *POST, PUT, DELETE, etc.
+      method: methodType, // *POST, PUT, DELETE, etc.
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(application/json) // body data type must match "Content-Type" header
+      body: JSON.stringify(data) // body data type must match "Content-Type" header
     });
     if (response.ok) {
       return await response.json(); // parses JSON response into native JavaScript objects
@@ -22,7 +22,17 @@ function posting(e){
     const post={
         question: document.getElementById("question").value
     }
-    console.log(post)
+    //console.log(post)
+
+    fetchData('/post/create',post,"POST")
+    .then(data =>{
+        if(!data.message){
+            window.location.href="post.html"
+        }
+    })
+    .catch(err =>{
+        console.log(err.message)
+    })
 }
 
 //answer to prompt

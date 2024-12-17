@@ -1,9 +1,9 @@
 const { json } = require("express");
 
-//Login
+
 async function fetchData(route = '', data = {}, methodType) {
     const response = await fetch(`http://localhost:3000${route}`, {
-      method: "POST", // *POST, PUT, DELETE, etc.
+      method: methodType, // *POST, PUT, DELETE, etc.
       headers: {
         'Content-Type': 'application/json'
       },
@@ -16,6 +16,7 @@ async function fetchData(route = '', data = {}, methodType) {
     }
   }
   
+//Login
 
 let login= document.getElementById("login")
 if(login) login.addEventListener('submit',logForm)
@@ -31,12 +32,11 @@ function logForm(e){
     fetchData('/user/login',user,"POST")
     .then(data =>{
         if(!data.message){
-            window.location.href="index.html"
+            window.location.href="login.html"
         }
     })
     .catch(err =>{
-        let errorSection=document.querySelector("#login.error")
-        errorSection.innerText=err.message
+        console.log(err.message)
     })
 }
 
@@ -58,14 +58,14 @@ function registerForm(e){
     fetchData('/user/register',user,"POST")
     .then(data =>{
         if(!data.message){
-            window.location.href="index.html"
+            window.location.href="register.html"
         }
     })
     .catch(err =>{
         console.log(err.message)
     })
 }
-}
+
 
 
 
