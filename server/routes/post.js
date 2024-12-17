@@ -1,5 +1,5 @@
 const express = require("express")
-const User = require("../models/post")
+const Posts = require("../models/post")
 const router = express.Router()
 
 router
@@ -15,7 +15,7 @@ router
 
 .post('/create', async (req,res) => {
 try{
-  let post= await Post.createPost(req.body);
+  let post= await Posts.createPost(req.body);
   res.send(post)
 } catch(err){
   res.status(401).send({message: err.message})
@@ -24,7 +24,7 @@ try{
 
 .put('/edit', async(req, res) => {
   try {
-    let post = await Post.updatePost(req.body)
+    let post = await Posts.updatePost(req.body)
   } catch(err) {
     res.status(401).send({message: err.message})
   }
@@ -32,7 +32,7 @@ try{
 
 .delete('/deletepost', async(req, res) => {
   try {
-    let post = await Post.deletePost(req.body)
+    let post = await Posts.deletePost(req.body)
     res.send({success: "Account has been deleted"})
   } catch(err) {
     res.status(401).send({message: err.message})

@@ -7,7 +7,7 @@ async function fetchData(route = '', data = {}, methodType) {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(application/json) // body data type must match "Content-Type" header
+      body: JSON.stringify(data) // body data type must match "Content-Type" header
     });
     if (response.ok) {
       return await response.json(); // parses JSON response into native JavaScript objects
@@ -54,7 +54,17 @@ function registerForm(e){
         password: document.getElementById("password").value,
         confirmation: document.getElementById("confirmation").value
     }
-    console.log(user)
+    //console.log(user)
+    fetchData('/user/register',user,"POST")
+    .then(data =>{
+        if(!data.message){
+            window.location.href="index.html"
+        }
+    })
+    .catch(err =>{
+        console.log(err.message)
+    })
+}
 }
 
 
